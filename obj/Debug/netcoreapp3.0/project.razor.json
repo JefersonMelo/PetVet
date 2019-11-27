@@ -14369,11 +14369,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projetos\\Layout\\UC05\\PetVet\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Projetos\\Layout\\UC05\\PetVet\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

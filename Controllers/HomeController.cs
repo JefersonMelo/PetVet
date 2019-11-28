@@ -27,6 +27,23 @@ namespace PetVet.Controllers
         {
             return View();
         }
+        public IActionResult ChecarLista()
+        {
+            return View();
+        }
+
+        public IActionResult PreAgendamento()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult PreAgendamento(PreAgendamento preAgendamento)
+        {
+            ChecagemLista.Incluir(preAgendamento);
+            return View("Concluido");
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -11,8 +11,19 @@ namespace PetVet.Controllers
 {
     public class HomeController : Controller
     {
-        
+
+        //retorna a home page
         public IActionResult Index()
+        {
+            return View();
+        }
+        //retorna serviços
+        public IActionResult Servicos()
+        {
+            return View();
+        }
+        //retorna agendamentos
+        public IActionResult Agendamentos()
         {
             return View();
         }

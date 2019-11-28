@@ -32,3 +32,5 @@ D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\PetVet.Views.pdb
 D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\PetVet.dll
 D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\PetVet.pdb
 D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\PetVet.csproj.CopyComplete
+D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\Razor\Views\Home\Agendamentos.cshtml.g.cs
+D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\Razor\Views\Home\Servicos.cshtml.g.cs

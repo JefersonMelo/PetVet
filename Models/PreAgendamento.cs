@@ -24,5 +24,17 @@ namespace PetVet.Models
         public string DataTimes { get => dataTimes; set => dataTimes = value; }
         public string Animal { get => animal; set => animal = value; }
         public string Necessidade { get => necessidade; set => necessidade = value; }
+
+
+        private static List<PreAgendamento> listaChecagens = new List<PreAgendamento>();
+
+        public static void Incluir(PreAgendamento agendamento)
+        {
+            foreach (PreAgendamento pa in listaChecagens)
+            {
+                listaChecagens.Add(agendamento);
+            }
+
+        }
     }
 }

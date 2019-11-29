@@ -32,3 +32,38 @@
 </form>            
     </main>
 </body>
+
+<!-- 
+    método a ser aplicado, não funcionou corretamete devido a formatação padrão mvc
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/CssReset.css" />
+    </head>
+<body>
+    <div id="area">
+        <form method="POST" id="formulario">
+        <fieldset>
+            <legend>Pré-Agendamento</legend>
+            <label asp-for="Nome">Nome:</label>
+            <input asp-for="Nome" class="campo_nome"/>
+            <label asp-for="Telefone">Telefone:</label>
+            <input asp-for="Telefone" class="campo_telefone"/>
+            <label asp-for="DataTimes">Data:</label>
+            <input asp-for="DataTimes" class="campo_data"/>
+            <label asp-for="Animal">Grupo do Animal:</label>
+                <select asp-for="Animal" class="campo_animal">
+                <option value="Felino">Felino</option>
+                <option value="Canino">Canino</option>
+                <option value="Ave">Ave</option>
+            </select>
+            <p>Necessidade</p>
+            <textarea asp-for="Necessidade" class="campo_mensagem"></textarea>
+            <a>
+                <input class="botao_cadastrar" type="submit" value="Cadastrar" />
+            </a>
+        </fieldset>
+        </form>   
+    </div>
+</body>
+</html>
+ -->

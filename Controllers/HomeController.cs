@@ -41,7 +41,7 @@ namespace PetVet.Controllers
         public IActionResult PreAgendamento(PreAgendamento preAgendamento)
         {
             ChecagemLista.Incluir(preAgendamento);
-            return View("Concluido");
+            return View("ChecarLista");
         }
 
 

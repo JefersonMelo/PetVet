@@ -8,17 +8,19 @@
            <th>Nome</th>
            <th>Telefone</th>
            <th>Data</th>
+           <th>Animal</th>
            <th>Necessidade</th>
        </tr>
    </thead>
    <tbody>
-       @foreach(ChecagemLista pa in Model)
+       @foreach(PreAgendamento pa in Model)
        {
        <tr>
             <td>@pa.Nome</td>
             <td>@pa.Telefone</td>
-            <td>@pa.data</td>
-            <td>@c.ConfirmaPresenca</td>
+            <td>@pa.DataTimes</td>
+            <td>@pa.Animal</td>
+            <td>@pa.Necessidade</td>
        </tr>
        }
        <a asp-action="PreAgendamento">Confitmar</a>

@@ -77,17 +77,87 @@ body {
   /* Vertically center the text there */
 }
 
-.menu{
+/* menu fixado como padrão para todas as páginas  */
+
+.menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-} 
+  border-top: 0;
+}
 
-/* 
-navbar-expand-sm 
-navbar-toggleable-sm 
-navbar-light bg-white 
-border-bottom 
-box-shadow 
-mb-3 
-*/
+/* ajustar grid, menu em lista*/
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+/* Ajustes do Formulário para agendamento, ainda não funciona deviso à formatação padrão mvc*/
+
+/* #area {
+  position: relative;
+  left: 37%;
+  top: 29%;
+  width: 320px;
+  height: 270px;
+}
+
+#area #formulario {
+  position: absolute;
+  display: block;
+}
+
+fieldset {
+  width: 300px;
+  height: 250px;
+}
+
+legend {
+  font-style: bold;
+  font-family: "Segoe UI";
+}
+
+#formulario label {
+  position: absolute;
+  left: 19px;
+  margin-right: 5px;
+}
+
+#formulario input.campo_nome {
+  position: absolute;
+  left: 95px;
+  top: 23px;
+  width: 225px;
+}
+
+#formulario input.campo_telefone {
+  position: absolute;
+  left: 95px;
+  margin-top: 2px;
+  width: 225px;
+}
+
+#formulario input.campo_data {
+  position: absolute;
+  left: 95px;
+  margin-top: 2px;
+  width: 225px;
+}
+
+#formulario input.campo_animal {
+  position: absolute;
+  left: 95px;
+  margin-top: 2px;
+  width: 225px;
+}
+
+#formulario textarea.campo_memnsagem {
+  position: absolute;
+}
+
+#formulario input.botao_cadastrar {
+  position: absolute;
+  bottom: 0.5em;
+  right: 10px;
+} */

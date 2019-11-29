@@ -25,7 +25,7 @@ namespace PetVet.Controllers
         //retorna agendamentos
         public IActionResult Agendamentos()
         {
-            return View();
+            return View("ChecarLista");
         }
         public IActionResult ChecarLista()
         {

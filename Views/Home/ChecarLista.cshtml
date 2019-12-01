@@ -1,26 +1,42 @@
 @model List<PreAgendamento>
-
-<h2>Cheque os Dados se estão ok</h2>
-
+    
+<h2>Cheque os Dados se estão ok</h2><br>
+<!-- Colunas a serem exibidas -->
 <table>
    <thead>
        <tr>
-           <th>Nome</th>
-           <th>Telefone</th>
-           <th>Data</th>
-           <th>Animal</th>
-           <th>Necessidade</th>
+           <th>Nome</th><br>
+           <th>Telefone</th><br>
+           <th>Data</th><br>
+           <th>Animal</th><br>
+           <th>Necessidade</th><br>
        </tr>
    </thead>
+   <!-- Lists Organizada -->
    <tbody>
        @foreach(PreAgendamento pa in Model)
        {
        <tr>
-            <td>@pa.Nome</td>
-            <td>@pa.Telefone</td>
-            <td>@pa.DataTimes</td>
-            <td>@pa.Animal</td>
-            <td>@pa.Necessidade</td>
+           <p>
+               <td>@pa.Nome</td>
+               <br>
+           </p>
+            <p>
+                <td>@pa.Telefone</td>
+                <br>
+            </p>
+            <p>
+                <td>@pa.DataTimes</td>
+                <br>
+            </p>
+            <p>
+                <td>@pa.Animal</td>
+                <br>
+            </p>
+            <p>
+                <td>@pa.Necessidade</td>
+                <br>
+            </p>
        </tr>
        }
        <!-- <a asp-action="PreAgendamento">Confitmar</a> -->

@@ -30,11 +30,7 @@ namespace PetVet.Models
 
         public static void Incluir(PreAgendamento agendamento)
         {
-            foreach (PreAgendamento pa in listaChecagens)
-            {
-                listaChecagens.Add(agendamento);
-            }
-
+            listaChecagens.Add(agendamento);
         }
     }
 }

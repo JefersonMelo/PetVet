@@ -25,27 +25,20 @@ namespace PetVet.Controllers
         //retorna agendamentos
         public IActionResult Agendamentos()
         {
-            return View("ChecarLista");
+            return View();
         }
-        public IActionResult ChecarLista()
+/*         public IActionResult ChecarLista()
         {
             return View();
         }
-
-        public IActionResult PreAgendamento()
-        {
-            return View();
-        }
-
-        [HttpPost]
+ */
+/*         [HttpPost]
         public IActionResult PreAgendamento(PreAgendamento preAgendamento)
         {
             ChecagemLista.Incluir(preAgendamento);
-            return View("ChecarLista");
+            return View();
         }
-
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+ */
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

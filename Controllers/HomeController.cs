@@ -27,18 +27,18 @@ namespace PetVet.Controllers
         {
             return View();
         }
-/*         public IActionResult ChecarLista()
+        public IActionResult ChecarLista()
         {
             return View();
         }
- */
-/*         [HttpPost]
+
+        [HttpPost]
         public IActionResult PreAgendamento(PreAgendamento preAgendamento)
         {
             ChecagemLista.Incluir(preAgendamento);
-            return View();
+            return View("ChecarLista");
         }
- */
+ 
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

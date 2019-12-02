@@ -12,7 +12,7 @@ criação das tabelas do banco de dados
 
 CREATE TABLE ChecagemLista
 (
-   idCliente INT NOT NULL  PRIMARY KEY AUTO INCREMENTE,
+   idCliente INT(7) NOT NULL  PRIMARY KEY AUTO INCREMENTE,
    nome VARCHAR(100) NOT NULL,
    telefone VARCHAR(15)NOT NULL,
    dataAgendamento DATE NOT NULL,

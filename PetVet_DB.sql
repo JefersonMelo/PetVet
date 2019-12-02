@@ -12,7 +12,7 @@ criação das tabelas do banco de dados
 
 CREATE TABLE ChecagemLista
 (
-   idCliente INT NOT NULL  PRIMARY KEY,
+   idCliente INT NOT NULL  PRIMARY KEY AUTO INCREMENTE,
    nome VARCHAR(100) NOT NULL,
    telefone VARCHAR(15)NOT NULL,
    dataAgendamento DATE NOT NULL,
@@ -23,10 +23,26 @@ CREATE TABLE ChecagemLista
 /* Entrada de dados */
 
 INSERT INTO ChecagemLista (idCliente, nome, telefone, dataAgendamento, tipoAnimal, necessidade)
-VALUES (1, crianca1, 199999999, 01/12/19, 'Toto', 'tosar esta criatura mega peluda')
+VALUES (1, crianca1, '199999999', 01/12/19, 'Toto', 'tosar esta criatura mega peluda')
 
 INSERT INTO ChecagemLista (idCliente, nome, telefone, dataAgendamento, tipoAnimal, necessidade)
-VALUES (2, crianca2, 299999999, 01/12/19, 'Miau', 'dar banho, ele não gosta')
+VALUES (2, crianca2, '299999999', 01/12/19, 'Miau', 'dar banho, ele não gosta')
 
 INSERT INTO ChecagemLista (idCliente, nome, telefone, dataAgendamento, tipoAnimal, necessidade)
-VALUES (3, crianca3, 399999999, 01/12/19, 'passalinho', 'dar banho e comida, ele está triste')
+VALUES (3, crianca3, '399999999', 01/12/19, 'passalinho', 'dar banho e comida, ele está triste')
+
+
+/* Criação da Tabela de serviços */
+
+CREATE TABLE Servicos(
+   IdServico INT NOT NULL PRIMARY KEY AUTO INCREMENTE,
+   servico VARCHAR(20) NOT NULL,
+   descricao VARCHAR(100),
+   valor FLOAT(10,2)
+);
+
+INSERT INTO Servicos (IdServico, servico, descricao, valor)
+VALUES(1, 'Tosa', 'cortar os pêlos do pet', 100,00)
+
+INSERT INTO Servicos (IdServico, servico, descricao, valor)
+VALUES(2, 'Banho', 'com água e sabão, o pet fica limpo', 200,00)

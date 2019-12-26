@@ -24,6 +24,5 @@ namespace PetVet.Models
         public string DataTimes { get => dataTimes; set => dataTimes = value; }
         public string Animal { get => animal; set => animal = value; }
         public string Necessidade { get => necessidade; set => necessidade = value; }
-
     }
 }

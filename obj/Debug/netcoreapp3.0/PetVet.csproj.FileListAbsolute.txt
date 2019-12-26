@@ -35,3 +35,4 @@ D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\PetVet.csproj.CopyComplet
 D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\Razor\Views\Home\Agendamentos.cshtml.g.cs
 D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\Razor\Views\Home\Servicos.cshtml.g.cs
 D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\Razor\Views\Home\ChecarLista.cshtml.g.cs
+D:\Projetos\Layout\UC05\PetVet\obj\Debug\netcoreapp3.0\Razor\Views\Home\Confirmacao.cshtml.g.cs

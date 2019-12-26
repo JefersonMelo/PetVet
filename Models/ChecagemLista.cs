@@ -13,6 +13,5 @@ namespace PetVet.Models
         {
             return listaChecagens;
         }
-
     }
 }

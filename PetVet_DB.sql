@@ -12,7 +12,7 @@ criação das tabelas do banco de dados
 
 CREATE TABLE Cliente
 (
-   idCliente INT(7) NOT NULL  PRIMARY KEY AUTO_INCREMENT,
+   idCliente INT NOT NULL  PRIMARY KEY AUTO_INCREMENT,
    nome VARCHAR(100) NOT NULL,
    telefone VARCHAR(15)NOT NULL,
    dataAgendamento DATE NOT NULL,

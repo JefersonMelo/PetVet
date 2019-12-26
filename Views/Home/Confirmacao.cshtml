@@ -1,17 +1,16 @@
 @model PreAgendamento
 @{
-    ViewData["Title"] = "Agendamentos";
+    ViewData["Title"] = "Confirmação";
 }
-
 <html>
 <body>
     <div id="area">
-        <form id="formulario">
+        <form method="POST" id="formulario">
         <fieldset>
-            <legend>Pré-Agendamento</legend>
+            <legend>Confirme Seus Dados</legend>
             <!-- nome -->
             <p>
-                <label>Nome:</label>
+                <label asp-for="Nome">Nome:</label>
                 <input asp-for="Nome" class="campo_nome"/><br>
             </p>
             <!-- telefone -->
@@ -40,8 +39,7 @@
             </p>
             <!-- botão que redireciona para checagem das informações do agendamento -->
             <p>
-                @* <input class="botao_cadastrar" type="submit" value="Enviar" /> *@
-                <input class="botao_cadastrar" asp-action="Confirmacao" type="submit" value="Enviar" />
+                <input class="botao_cadastrar" type="submit" value="Cadastrar" />
                 @* <a asp-action="Confirmacao" class="botao_cadastrar">Enviar </a> *@
             </p>
         </fieldset>
@@ -49,3 +47,28 @@
     </div>
 </body>
 </html>
+@* <html>
+<body>
+    <div id="area" method="POST">
+        <h2>Cheque os Dados se estão ok</h2><br>
+<!-- Colunas a serem exibidas -->
+<table>
+   <thead>
+       <tr>
+           <th>Nome &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Telefone &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Data Agendamento &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Pet &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Nescessidade</th>
+       </tr>
+   </thead>
+   <tbody>
+        <td>@ViewBag.Nome</td>
+        <td>@ViewBag.Data</td>
+   </tbody>
+    </div> 
+    </p>
+        <input class="botao_cadastrar" type="submit" value="Cadastrar" />
+    </p>  
+</body>
+</html> *@

@@ -5,38 +5,23 @@
 <table>
    <thead>
        <tr>
-           <th>Nome</th><br>
-           <th>Telefone</th><br>
-           <th>Data</th><br>
-           <th>Animal</th><br>
-           <th>Necessidade</th><br>
+           <th>Nome &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Telefone &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Data Agendamento &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Pet &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Nescessidade</th>
        </tr>
    </thead>
    <!-- Lists Organizada -->
    <tbody>
        @foreach(PreAgendamento pa in Model)
        {
-       <tr>
-           <p>
-               <td>@pa.Nome</td>
-               <br>
-           </p>
-            <p>
-                <td>@pa.Telefone</td>
-                <br>
-            </p>
-            <p>
-                <td>@pa.DataTimes</td>
-                <br>
-            </p>
-            <p>
-                <td>@pa.Animal</td>
-                <br>
-            </p>
-            <p>
-                <td>@pa.Necessidade</td>
-                <br>
-            </p>
+           <tr>
+            <td>@pa.Nome &nbsp;&nbsp;&nbsp;&nbsp;</td><br>
+            <td>@pa.Telefone &nbsp;&nbsp;&nbsp;&nbsp;</td><br>
+            <td>@pa.DataTimes &nbsp;&nbsp;&nbsp;&nbsp;</td><br>
+            <td>@pa.Animal &nbsp;&nbsp;&nbsp;&nbsp;</td><br>
+            <td>@pa.Necessidade </td><br>
        </tr>
        }
        <!-- <a asp-action="PreAgendamento">Confitmar</a> -->
